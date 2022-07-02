@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First project with html css</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #eee;
+
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            justify-content: space-evenly;
+            padding: 6rem;
+            flex-wrap: wrap;
+
+
+        }
+
+        .container p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            letter-spacing: .5px;
+        }
+
+        .text {
+            width: 50vw;
+        }
+
+        .image img {
+
+            width: 20rem;
+            border-radius: 20px;
+
+        }
+
+        .header-h1 {
+            font-size: 4.8rem;
+            margin-bottom: 3rem;
+
+        }
+
+        small {
+            display: block;
+            margin-bottom: 1rem;
+
+
+        }
+
+        .web {
+            color: gold;
+            font-weight: 800;
+        }
+
+        span {
+            color: rgba(155, 59, 59, 0.832);
+        }
+
+        .btn {
+            background-color: rgba(99, 20, 55, 0.695);
+            padding: .5rem 1rem;
+            border-radius: 9px;
+            color: white;
+            font-weight: 700;
+            box-shadow: 2px 5px 5px gray;
+        }
+
+        .btn:hover {
+            background-color: rgba(192, 161, 175, 0.695);
+
+            color: white;
+            font-weight: 700;
+            box-shadow: 2px 5px 5px gray;
+            transition: all 1s ease;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(224, 198, 198);
+        }
+
+        .header ul {
+
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            list-style-type: none;
+
+            justify-content: space-evenly;
+            width: 30vw;
+        }
+
+        ul li {
+            display: inline-block;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        .about {
+            text-align: center;
+            color: rgb(230, 230, 15);
+            font-size: 1.7rem;
+        }
+
+        .text-one {
+            margin-top: 3rem;
+            justify-content: center;
+            align-items: center;
+            line-height: 1.5;
+        }
+
+        .text-one h4 {
+            margin-bottom: 1.6rem;
+            letter-spacing: .5px;
+            font-size: 1.5rem;
+        }
+
+        /* @media (max-width:660px) {
+            .container {
+                display: flex;
+                flex-direction: column;
+
+
+            }
+
+            .header-h1 {
+                font-size: 3rem;
+            }
+        } */
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div>
+            <img style="width: 50px;" src="img/mypic.jpg" alt="logo">
+        </div>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Price</li>
+        </ul>
+    </header>
+    <div class="container">
+        <div class="text">
+            <h4>Web developer</h4>
+            <h1 class="header-h1">Hello! i'm <span> Shariful islam</span>...</h1>
+            <small>I am a <span class="web"> web developer</span></small>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores modi aliquid eius eos laudantium
+                consequatur
+                unde tenetur quod veritatis pariatur.</p>
+            <button class="btn">Click cv</button>
+        </div>
+        <div class="image">
+            <img src="img/profile (2).jpg" alt="My profile picture">
+        </div>
+
+
+    </div>
+    <h3 class="about">About Me</h3>
+    <div class="container">
+        <div class="text text-one">
+            <h4>Here is my description of developer...</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos aspernatur sequi facilis? Qui sit
+                labore
+                necessitatibus natus excepturi temporibus a eum, aliquid aspernatur architecto itaque quod explicabo
+                molestiae id laudantium.</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, animi architecto eligendi
+                doloremque
+                qui laboriosam ipsa deserunt! Distinctio, suscipit quod?</p>
+        </div>
+        <div class="image">
+            <img src="img/192457105_833276130902215_3877900046314634763_n.jpg" alt="">
+        </div>
+    </div>
+
+
+</body>
+
+</html>
